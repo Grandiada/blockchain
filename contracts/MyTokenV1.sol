@@ -23,7 +23,7 @@ contract MyTokenV1 is
         uint256 initialSupply,
         address initialOwner
     ) public initializer {
-        __ERC20_init("MyToken", "MTK");
+        __ERC20_init("MyCoolToken", "MCT");
         __Ownable_init(initialOwner);
         __UUPSUpgradeable_init();
 

@@ -6,7 +6,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deployer:", deployer.address);
 
-  const proxyAddress = "0x1306026007c89d9Ec49acf9720b5B4A3CE02c496";
+  const proxyAddress = "0xf3D3DEF6C0aba842fbd1930a120419fcdb96ae52";
 
   // 1. Деплоим новую реализацию V2
   const MyTokenV2 = await ethers.getContractFactory("MyTokenV2");
