@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "upgrade-proxy": "npx hardhat run scripts/upgrade-proxy.ts --network amoy",
+    "deploy-proxy": "npx hardhat run scripts/deploy-proxy.ts --network amoy",
     "deploy": "npx hardhat run scripts/deploy.ts --network hardhatOp",
     "deploy-amoy": "npx hardhat run scripts/deploy.ts --network amoy",
     "test": "npx hardhat test"
@@ -35,6 +37,7 @@
   "type": "module",
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
     "dotenv": "^17.2.3"
   }
 }
