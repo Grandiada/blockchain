@@ -1,0 +1,25 @@
+{
+  "name": "Student Visit Card",
+  "description": "Soulbound ERC-721 NFT representing a student visit card",
+  "image": "ipfs://QmYourImageHashHere",
+  "external_url": "",
+  "attributes": [
+    {
+      "trait_type": "Course",
+      "value": "Informatics 22LRJS"
+    },
+    {
+      "trait_type": "Year",
+      "value": 2025
+    },
+    {
+      "trait_type": "Student Name",
+      "value": "John Doe"
+    },
+    {
+      "trait_type": "Student ID",
+      "value": "12345"
+    }
+  ]
+}
+

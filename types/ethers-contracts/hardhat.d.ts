@@ -15,6 +15,7 @@ getContractFactory(name: 'MultiSigWallet', signerOrOptions?: ethers.Signer | Fac
 getContractFactory(name: 'MyTokenV1', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MyTokenV1__factory>
 getContractFactory(name: 'MyTokenV2', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MyTokenV2__factory>
 getContractFactory(name: 'MyTokenProxy', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MyTokenProxy__factory>
+getContractFactory(name: 'SoulboundVisitCardERC721', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.SoulboundVisitCardERC721__factory>
 getContractFactory(name: 'TestToken', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.TestToken__factory>
 
   getContractAt(name: 'Counter', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.Counter>
@@ -22,6 +23,7 @@ getContractAt(name: 'MultiSigWallet', address: string | ethers.Addressable, sign
 getContractAt(name: 'MyTokenV1', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MyTokenV1>
 getContractAt(name: 'MyTokenV2', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MyTokenV2>
 getContractAt(name: 'MyTokenProxy', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MyTokenProxy>
+getContractAt(name: 'SoulboundVisitCardERC721', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.SoulboundVisitCardERC721>
 getContractAt(name: 'TestToken', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.TestToken>
 
   deployContract(name: 'Counter', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.Counter>
@@ -29,6 +31,7 @@ deployContract(name: 'MultiSigWallet', signerOrOptions?: ethers.Signer | DeployC
 deployContract(name: 'MyTokenV1', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV1>
 deployContract(name: 'MyTokenV2', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV2>
 deployContract(name: 'MyTokenProxy', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenProxy>
+deployContract(name: 'SoulboundVisitCardERC721', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.SoulboundVisitCardERC721>
 deployContract(name: 'TestToken', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
 
   deployContract(name: 'Counter', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.Counter>
@@ -36,6 +39,7 @@ deployContract(name: 'MultiSigWallet', args: any[], signerOrOptions?: ethers.Sig
 deployContract(name: 'MyTokenV1', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV1>
 deployContract(name: 'MyTokenV2', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV2>
 deployContract(name: 'MyTokenProxy', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenProxy>
+deployContract(name: 'SoulboundVisitCardERC721', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.SoulboundVisitCardERC721>
 deployContract(name: 'TestToken', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
 
     // default types

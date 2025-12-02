@@ -6,4 +6,5 @@ export * as multiSigWalletSol from './MultiSigWallet.sol/index.js';
 export * as myTokenV1Sol from './MyTokenV1.sol/index.js';
 export * as myTokenV2Sol from './MyTokenV2.sol/index.js';
 export * as proxyContractSol from './ProxyContract.sol/index.js';
+export * as soulboundVisitCardErc721Sol from './SoulboundVisitCardERC721.sol/index.js';
 export * as testTokenSol from './TestToken.sol/index.js';

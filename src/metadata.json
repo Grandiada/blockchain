@@ -1,0 +1,15 @@
+{
+    "name": "Student Visit Card",
+    "description": "Soulbound NFT representing a unique student identity card.",
+    "image": "ipfs://bafkreid3iaertrtuqoxy4orvck3dgxn73atgjljtdq6qgpx4ome7peiigm",
+    "attributes": [
+        {
+            "trait_type": "course",
+            "value": "Informatics 22LRJS"
+        },
+        {
+            "trait_type": "year",
+            "value": "2025"
+        }
+    ]
+}

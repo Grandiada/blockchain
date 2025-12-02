@@ -8,6 +8,7 @@
     "deploy-proxy": "npx hardhat run scripts/deploy-proxy.ts --network amoy",
     "deploy": "npx hardhat run scripts/deploy.ts --network hardhatOp",
     "deploy-amoy": "npx hardhat run scripts/deploy.ts --network amoy",
+    "deploy-erc-721": "npx hardhat run scripts/deploy-erc721.ts --network amoy",
     "test": "npx hardhat test",
     "test:multi-sig": "npx hardhat test test/MultiSigWallet.ts",
     "dev": "vite",
