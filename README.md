@@ -12,12 +12,10 @@ This project implements two NFT standards:
   - [Contract Overview](#contract-overview)
   - [Deployment](#deployment)
   - [Minting](#minting)
-  - [Testing](#testing)
 - [ERC-1155: Game Character Collection](#erc-1155-game-character-collection)
   - [Contract Overview](#contract-overview-1)
   - [Deployment](#deployment-1)
   - [Minting](#minting-1)
-  - [Testing](#testing-1)
 - [Metadata Structure](#metadata-structure)
   - [ERC-721 Metadata](#erc-721-metadata)
   - [ERC-1155 Metadata](#erc-1155-metadata)
@@ -53,8 +51,6 @@ PRIVATE_KEY2=your_second_private_key_here
 # Optional: Network name for logging
 NETWORK_NAME=amoy
 ```
-
-**⚠️ Security Note**: Never commit your `.env` file to version control. It's already in `.gitignore`.
 
 3. **Compile Contracts**
 
@@ -148,19 +144,6 @@ console.log("Token ID:", tokenId.toString());
 - Recipient address must not already have a visit card
 - IPFS URI must point to valid ERC-721 metadata JSON
 
-### Testing
-
-Run the test suite:
-
-```bash
-npm test
-```
-
-To run specific tests:
-
-```bash
-npx hardhat test test/YourTestFile.ts
-```
 
 ## ERC-1155: Game Character Collection
 
@@ -296,13 +279,6 @@ const uris = [
 await contract.setTokenURIBatch(tokenIds, uris);
 ```
 
-### Testing
-
-Run tests for the ERC-1155 contract:
-
-```bash
-npm test
-```
 
 ## Metadata Structure
 
