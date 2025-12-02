@@ -1,0 +1,39 @@
+{
+    "name": "Stone Guardian #5",
+    "description": "A Stone Guardian with colossal defenses, built to withstand overwhelming enemy assaults.",
+    "image": "ipfs://bafkreiaonrjooh7or5yza3cmnuswbdwtd5y3vys6jpmyvv2k2njpogcbvi",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Gray"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 35,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 85,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Defense",
+        "value": 98,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 5,
+        "display_type": "number"
+      }
+    ]
+  }
+  

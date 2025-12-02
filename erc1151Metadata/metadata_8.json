@@ -1,0 +1,39 @@
+{
+    "name": "Azure Assassin #8",
+    "description": "An Azure Assassin trained to eliminate high-value targets with unmatched precision.",
+    "image": "ipfs://bafkreicfllofnyvnubwnazxkw4y6bgj3kxn6euah44cqnefy3r7yu6sp7q",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Azure"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 90,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 62,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Critical Chance",
+        "value": 93,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 8,
+        "display_type": "number"
+      }
+    ]
+  }
+  

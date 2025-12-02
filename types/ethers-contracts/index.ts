@@ -3,6 +3,8 @@
 /* eslint-disable */
 import type * as counterSol from './Counter.sol/index.js';
 export type { counterSol };
+import type * as gameCharacterCollectionErc1155Sol from './GameCharacterCollectionERC1155.sol/index.js';
+export type { gameCharacterCollectionErc1155Sol };
 import type * as multiSigWalletSol from './MultiSigWallet.sol/index.js';
 export type { multiSigWalletSol };
 import type * as myTokenV1Sol from './MyTokenV1.sol/index.js';
@@ -18,6 +20,8 @@ export type { testTokenSol };
 export * as factories from './factories/index.js';
 export type { Counter } from './Counter.sol/Counter.js';
 export { Counter__factory } from './factories/Counter.sol/Counter__factory.js';
+export type { GameCharacterCollectionERC1155 } from './GameCharacterCollectionERC1155.sol/GameCharacterCollectionERC1155.js';
+export { GameCharacterCollectionERC1155__factory } from './factories/GameCharacterCollectionERC1155.sol/GameCharacterCollectionERC1155__factory.js';
 export type { MultiSigWallet } from './MultiSigWallet.sol/MultiSigWallet.js';
 export { MultiSigWallet__factory } from './factories/MultiSigWallet.sol/MultiSigWallet__factory.js';
 export type { MyTokenV1 } from './MyTokenV1.sol/MyTokenV1.js';

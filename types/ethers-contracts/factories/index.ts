@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as counterSol from './Counter.sol/index.js';
+export * as gameCharacterCollectionErc1155Sol from './GameCharacterCollectionERC1155.sol/index.js';
 export * as multiSigWalletSol from './MultiSigWallet.sol/index.js';
 export * as myTokenV1Sol from './MyTokenV1.sol/index.js';
 export * as myTokenV2Sol from './MyTokenV2.sol/index.js';

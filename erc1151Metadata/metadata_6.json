@@ -1,0 +1,33 @@
+{
+    "name": "Lightning Monk #6",
+    "description": "A Lightning Monk who channels electric energy into swift and precise strikes.",
+    "image": "ipfs://bafkreieqjymxcfovz5ylxygsc66lrzzh2vqnbksinookrf4yipsuymxrca",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 92,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 70,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 6,
+        "display_type": "number"
+      }
+    ]
+  }
+  

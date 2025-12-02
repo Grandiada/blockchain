@@ -1,0 +1,39 @@
+{
+    "name": "Emerald Druid #10",
+    "description": "An Emerald Druid attuned to the life force of nature, capable of healing allies and ensnaring enemies.",
+    "image": "ipfs://bafkreid7psfctnanm5rlkyv6mm7ffdpgyj4ihnsocqnoz2ulkjf77g2cti",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Emerald"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 65,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 58,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Healing Power",
+        "value": 92,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 10,
+        "display_type": "number"
+      }
+    ]
+  }
+  

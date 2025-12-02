@@ -11,6 +11,7 @@ import * as Contracts from "./index.js";
 declare module "@nomicfoundation/hardhat-ethers/types" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
   getContractFactory(name: 'Counter', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.Counter__factory>
+getContractFactory(name: 'GameCharacterCollectionERC1155', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.GameCharacterCollectionERC1155__factory>
 getContractFactory(name: 'MultiSigWallet', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MultiSigWallet__factory>
 getContractFactory(name: 'MyTokenV1', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MyTokenV1__factory>
 getContractFactory(name: 'MyTokenV2', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MyTokenV2__factory>
@@ -19,6 +20,7 @@ getContractFactory(name: 'SoulboundVisitCardERC721', signerOrOptions?: ethers.Si
 getContractFactory(name: 'TestToken', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.TestToken__factory>
 
   getContractAt(name: 'Counter', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.Counter>
+getContractAt(name: 'GameCharacterCollectionERC1155', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.GameCharacterCollectionERC1155>
 getContractAt(name: 'MultiSigWallet', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MultiSigWallet>
 getContractAt(name: 'MyTokenV1', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MyTokenV1>
 getContractAt(name: 'MyTokenV2', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MyTokenV2>
@@ -27,6 +29,7 @@ getContractAt(name: 'SoulboundVisitCardERC721', address: string | ethers.Address
 getContractAt(name: 'TestToken', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.TestToken>
 
   deployContract(name: 'Counter', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.Counter>
+deployContract(name: 'GameCharacterCollectionERC1155', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.GameCharacterCollectionERC1155>
 deployContract(name: 'MultiSigWallet', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MultiSigWallet>
 deployContract(name: 'MyTokenV1', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV1>
 deployContract(name: 'MyTokenV2', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV2>
@@ -35,6 +38,7 @@ deployContract(name: 'SoulboundVisitCardERC721', signerOrOptions?: ethers.Signer
 deployContract(name: 'TestToken', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
 
   deployContract(name: 'Counter', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.Counter>
+deployContract(name: 'GameCharacterCollectionERC1155', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.GameCharacterCollectionERC1155>
 deployContract(name: 'MultiSigWallet', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MultiSigWallet>
 deployContract(name: 'MyTokenV1', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV1>
 deployContract(name: 'MyTokenV2', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MyTokenV2>

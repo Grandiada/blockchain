@@ -1,0 +1,39 @@
+{
+    "name": "Forest Ranger #4",
+    "description": "A keen-eyed Forest Ranger who strikes from afar with precision and agility.",
+    "image": "ipfs://bafkreid7psfctnanm5rlkyv6mm7ffdpgyj4ihnsocqnoz2ulkjf77g2cti",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 78,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 65,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Accuracy",
+        "value": 90,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 4,
+        "display_type": "number"
+      }
+    ]
+  }
+  

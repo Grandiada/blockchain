@@ -1,0 +1,33 @@
+{
+    "name": "Red Warrior #1",
+    "description": "A powerful Red Warrior character from the Game Character Collection. This legendary fighter combines high strength with moderate speed, making them a formidable opponent on the battlefield.",
+    "image": "ipfs://bafkreied4t4mcnkywvkkq4fpwa22anspslsem3racpghxuvxmcrpou623y",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 60,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 90,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Rare"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 1,
+        "display_type": "number"
+      }
+    ]
+  }
+  

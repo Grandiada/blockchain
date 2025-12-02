@@ -1,0 +1,39 @@
+{
+    "name": "Crimson Berserker #7",
+    "description": "A Crimson Berserker who grows stronger the longer the battle rages.",
+    "image": "ipfs://bafkreied4t4mcnkywvkkq4fpwa22anspslsem3racpghxuvxmcrpou623y",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Crimson"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 55,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 96,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rage Meter",
+        "value": 100,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Mythic"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 7,
+        "display_type": "number"
+      }
+    ]
+  }
+  

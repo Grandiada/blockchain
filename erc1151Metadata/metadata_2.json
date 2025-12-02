@@ -1,0 +1,33 @@
+{
+    "name": "Blue Rogue #2",
+    "description": "A swift Blue Rogue who excels at stealth and critical strikes, darting in and out of combat before enemies can react.",
+    "image": "ipfs://bafkreicfllofnyvnubwnazxkw4y6bgj3kxn6euah44cqnefy3r7yu6sp7q",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 88,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 55,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Uncommon"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 2,
+        "display_type": "number"
+      }
+    ]
+  }
+  

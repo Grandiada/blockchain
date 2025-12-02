@@ -1,0 +1,39 @@
+{
+    "name": "Arcane Mage #3",
+    "description": "An Arcane Mage who commands pure magical energy, trading physical strength for devastating spell power.",
+    "image": "ipfs://bafkreiej6eu7a32wv2puzdpgqrgqc3qf6xoyd2hgg5xf5plxzbyc6b2tn4",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Purple"
+      },
+      {
+        "trait_type": "Speed",
+        "value": 50,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Strength",
+        "value": 40,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Magic Power",
+        "value": 95,
+        "display_type": "number",
+        "max_value": 100
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Token ID",
+        "value": 3,
+        "display_type": "number"
+      }
+    ]
+  }
+  
