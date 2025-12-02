@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "npx hardhat compile",
     "upgrade-proxy": "npx hardhat run scripts/upgrade-proxy.ts --network amoy",
     "deploy-proxy": "npx hardhat run scripts/deploy-proxy.ts --network amoy",
     "deploy": "npx hardhat run scripts/deploy.ts --network hardhatOp",
     "deploy-amoy": "npx hardhat run scripts/deploy.ts --network amoy",
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "test:multi-sig": "npx hardhat test test/MultiSigWallet.ts"
   },
   "repository": {
     "type": "git",

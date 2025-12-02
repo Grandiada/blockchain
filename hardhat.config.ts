@@ -31,7 +31,7 @@ const config: HardhatUserConfig = {
       chainType: "op",
       chainId: 80002,
       url: configVariable("AMOY_RPC_URL"),
-      accounts: [configVariable("PRIVATE_KEY")],
+      accounts: [configVariable("PRIVATE_KEY1"), configVariable("PRIVATE_KEY2")],
     },
     hardhatOp: {
       type: "edr-simulated",
