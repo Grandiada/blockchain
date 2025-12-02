@@ -6,18 +6,16 @@ import type { TypedContractEvent, TypedDeferredTopicFilter, TypedEventLog, Typed
   
 
   export interface SoulboundVisitCardERC721Interface extends Interface {
-    getFunction(nameOrSignature: "approve" | "balanceOf" | "getApproved" | "getStudentMetadata" | "getStudentMetadataByAddress" | "hasCard" | "isApprovedForAll" | "mintVisitCard" | "name" | "owner" | "ownerOf" | "renounceOwnership" | "safeTransferFrom(address,address,uint256)" | "safeTransferFrom(address,address,uint256,bytes)" | "setApprovalForAll" | "studentTokenId" | "supportsInterface" | "symbol" | "tokenURI" | "transferFrom" | "transferOwnership"): FunctionFragment;
+    getFunction(nameOrSignature: "approve" | "balanceOf" | "getApproved" | "hasCard" | "isApprovedForAll" | "mintVisitCard" | "name" | "owner" | "ownerOf" | "renounceOwnership" | "safeTransferFrom(address,address,uint256)" | "safeTransferFrom(address,address,uint256,bytes)" | "setApprovalForAll" | "studentTokenId" | "supportsInterface" | "symbol" | "tokenURI" | "transferFrom" | "transferOwnership"): FunctionFragment;
 
     getEvent(nameOrSignatureOrTopic: "Approval" | "ApprovalForAll" | "BatchMetadataUpdate" | "MetadataUpdate" | "OwnershipTransferred" | "Transfer" | "VisitCardMinted"): EventFragment;
 
     encodeFunctionData(functionFragment: 'approve', values: [AddressLike, BigNumberish]): string;
 encodeFunctionData(functionFragment: 'balanceOf', values: [AddressLike]): string;
 encodeFunctionData(functionFragment: 'getApproved', values: [BigNumberish]): string;
-encodeFunctionData(functionFragment: 'getStudentMetadata', values: [BigNumberish]): string;
-encodeFunctionData(functionFragment: 'getStudentMetadataByAddress', values: [AddressLike]): string;
 encodeFunctionData(functionFragment: 'hasCard', values: [AddressLike]): string;
 encodeFunctionData(functionFragment: 'isApprovedForAll', values: [AddressLike, AddressLike]): string;
-encodeFunctionData(functionFragment: 'mintVisitCard', values: [AddressLike, string, string, BigNumberish]): string;
+encodeFunctionData(functionFragment: 'mintVisitCard', values: [AddressLike, string]): string;
 encodeFunctionData(functionFragment: 'name', values?: undefined): string;
 encodeFunctionData(functionFragment: 'owner', values?: undefined): string;
 encodeFunctionData(functionFragment: 'ownerOf', values: [BigNumberish]): string;
@@ -35,8 +33,6 @@ encodeFunctionData(functionFragment: 'transferOwnership', values: [AddressLike])
     decodeFunctionResult(functionFragment: 'approve', data: BytesLike): Result;
 decodeFunctionResult(functionFragment: 'balanceOf', data: BytesLike): Result;
 decodeFunctionResult(functionFragment: 'getApproved', data: BytesLike): Result;
-decodeFunctionResult(functionFragment: 'getStudentMetadata', data: BytesLike): Result;
-decodeFunctionResult(functionFragment: 'getStudentMetadataByAddress', data: BytesLike): Result;
 decodeFunctionResult(functionFragment: 'hasCard', data: BytesLike): Result;
 decodeFunctionResult(functionFragment: 'isApprovedForAll', data: BytesLike): Result;
 decodeFunctionResult(functionFragment: 'mintVisitCard', data: BytesLike): Result;
@@ -129,9 +125,9 @@ decodeFunctionResult(functionFragment: 'transferOwnership', data: BytesLike): Re
   
 
     export namespace VisitCardMintedEvent {
-      export type InputTuple = [student: AddressLike, tokenId: BigNumberish, tokenURI_: string, course: string, year: BigNumberish];
-      export type OutputTuple = [student: string, tokenId: bigint, tokenURI_: string, course: string, year: bigint];
-      export interface OutputObject {student: string, tokenId: bigint, tokenURI_: string, course: string, year: bigint };
+      export type InputTuple = [student: AddressLike, tokenId: BigNumberish, tokenURI_: string];
+      export type OutputTuple = [student: string, tokenId: bigint, tokenURI_: string];
+      export interface OutputObject {student: string, tokenId: bigint, tokenURI_: string };
       export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>
       export type Filter = TypedDeferredTopicFilter<Event>
       export type Log = TypedEventLog<Event>
@@ -198,22 +194,6 @@ decodeFunctionResult(functionFragment: 'transferOwnership', data: BytesLike): Re
     
 
     
-    getStudentMetadata: TypedContractMethod<
-      [tokenId: BigNumberish, ],
-      [[string, bigint] & {course: string, year: bigint }],
-      'view'
-    >
-    
-
-    
-    getStudentMetadataByAddress: TypedContractMethod<
-      [student: AddressLike, ],
-      [[string, bigint] & {course: string, year: bigint }],
-      'view'
-    >
-    
-
-    
     hasCard: TypedContractMethod<
       [student: AddressLike, ],
       [boolean],
@@ -231,7 +211,7 @@ decodeFunctionResult(functionFragment: 'transferOwnership', data: BytesLike): Re
 
     
     mintVisitCard: TypedContractMethod<
-      [student: AddressLike, tokenURI_: string, course: string, year: BigNumberish, ],
+      [student: AddressLike, tokenURI_: string, ],
       [void],
       'nonpayable'
     >
@@ -359,16 +339,6 @@ getFunction(nameOrSignature: 'getApproved'): TypedContractMethod<
       [string],
       'view'
     >;
-getFunction(nameOrSignature: 'getStudentMetadata'): TypedContractMethod<
-      [tokenId: BigNumberish, ],
-      [[string, bigint] & {course: string, year: bigint }],
-      'view'
-    >;
-getFunction(nameOrSignature: 'getStudentMetadataByAddress'): TypedContractMethod<
-      [student: AddressLike, ],
-      [[string, bigint] & {course: string, year: bigint }],
-      'view'
-    >;
 getFunction(nameOrSignature: 'hasCard'): TypedContractMethod<
       [student: AddressLike, ],
       [boolean],
@@ -380,7 +350,7 @@ getFunction(nameOrSignature: 'isApprovedForAll'): TypedContractMethod<
       'view'
     >;
 getFunction(nameOrSignature: 'mintVisitCard'): TypedContractMethod<
-      [student: AddressLike, tokenURI_: string, course: string, year: BigNumberish, ],
+      [student: AddressLike, tokenURI_: string, ],
       [void],
       'nonpayable'
     >;
@@ -484,7 +454,7 @@ getEvent(key: 'VisitCardMinted'): TypedContractEvent<VisitCardMintedEvent.InputT
       Transfer: TypedContractEvent<TransferEvent.InputTuple, TransferEvent.OutputTuple, TransferEvent.OutputObject>;
     
 
-      'VisitCardMinted(address,uint256,string,string,uint256)': TypedContractEvent<VisitCardMintedEvent.InputTuple, VisitCardMintedEvent.OutputTuple, VisitCardMintedEvent.OutputObject>;
+      'VisitCardMinted(address,uint256,string)': TypedContractEvent<VisitCardMintedEvent.InputTuple, VisitCardMintedEvent.OutputTuple, VisitCardMintedEvent.OutputObject>;
       VisitCardMinted: TypedContractEvent<VisitCardMintedEvent.InputTuple, VisitCardMintedEvent.OutputTuple, VisitCardMintedEvent.OutputObject>;
     
     };

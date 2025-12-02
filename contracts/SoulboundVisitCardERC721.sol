@@ -23,23 +23,13 @@ contract SoulboundVisitCardERC721 is ERC721URIStorage, Ownable {
     // Make sure each student (wallet) can receive only one card
     mapping(address => uint256) private _studentTokenId;
 
-    // Student metadata structure
-    struct StudentMetadata {
-        string course;
-        uint256 year;
-    }
-
-    // Mapping from tokenId to student metadata
-    mapping(uint256 => StudentMetadata) private _tokenMetadata;
 
     // ============ Events ============
 
     event VisitCardMinted(
         address indexed student,
         uint256 indexed tokenId,
-        string tokenURI_,
-        string course,
-        uint256 year
+        string tokenURI_
     );
 
     // ============ Constructor ============
@@ -65,24 +55,6 @@ contract SoulboundVisitCardERC721 is ERC721URIStorage, Ownable {
         return _studentTokenId[student] != 0;
     }
 
-    /**
-     * @dev Returns the metadata (course and year) for a given tokenId.
-     */
-    function getStudentMetadata(uint256 tokenId) external view returns (string memory course, uint256 year) {
-        StudentMetadata memory metadata = _tokenMetadata[tokenId];
-        require(bytes(metadata.course).length > 0, "Token does not exist");
-        return (metadata.course, metadata.year);
-    }
-
-    /**
-     * @dev Returns the metadata (course and year) for a student's address.
-     */
-    function getStudentMetadataByAddress(address student) external view returns (string memory course, uint256 year) {
-        uint256 tokenId = _studentTokenId[student];
-        require(tokenId != 0, "Student does not have a card");
-        StudentMetadata memory metadata = _tokenMetadata[tokenId];
-        return (metadata.course, metadata.year);
-    }
 
     // ============ Mint Logic (Owner Only) ============
 
@@ -93,8 +65,6 @@ contract SoulboundVisitCardERC721 is ERC721URIStorage, Ownable {
      * - caller must be contract owner.
      * - `student` must not be the zero address.
      * - `student` must not already own a card.
-     * - `course` must not be empty.
-     * - `year` must be greater than 0.
      * - `tokenURI_` should point to off-chain metadata (e.g. IPFS JSON),
      *   which includes:
      *      - a unique image (image field)
@@ -102,31 +72,18 @@ contract SoulboundVisitCardERC721 is ERC721URIStorage, Ownable {
      */
     function mintVisitCard(
         address student,
-        string calldata tokenURI_,
-        string calldata course,
-        uint256 year
-    )
-        external
-        onlyOwner
-    {
+        string calldata tokenURI_
+    ) external onlyOwner {
         require(student != address(0), "Invalid student address");
         require(_studentTokenId[student] == 0, "Student already has a card");
-        require(bytes(course).length > 0, "Course cannot be empty");
-        require(year > 0, "Year must be greater than 0");
 
         uint256 tokenId = _nextTokenId++;
         _safeMint(student, tokenId);
         _setTokenURI(tokenId, tokenURI_);
 
-        // Store on-chain metadata
-        _tokenMetadata[tokenId] = StudentMetadata({
-            course: course,
-            year: year
-        });
-
         _studentTokenId[student] = tokenId;
 
-        emit VisitCardMinted(student, tokenId, tokenURI_, course, year);
+        emit VisitCardMinted(student, tokenId, tokenURI_);
     }
 
     // ============ Soulbound Enforcement ============
