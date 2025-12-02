@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx hardhat compile",
+    "build-hardhat": "npx hardhat compile",
     "upgrade-proxy": "npx hardhat run scripts/upgrade-proxy.ts --network amoy",
     "deploy-proxy": "npx hardhat run scripts/deploy-proxy.ts --network amoy",
     "deploy": "npx hardhat run scripts/deploy.ts --network hardhatOp",
     "deploy-amoy": "npx hardhat run scripts/deploy.ts --network amoy",
     "test": "npx hardhat test",
-    "test:multi-sig": "npx hardhat test test/MultiSigWallet.ts"
+    "test:multi-sig": "npx hardhat test test/MultiSigWallet.ts",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -28,18 +32,31 @@
     "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^8.0.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.19.0",
     "chai": "^5.3.3",
     "ethers": "^6.15.0",
     "forge-std": "github:foundry-rs/forge-std#v1.9.4",
     "hardhat": "^3.0.10",
     "mocha": "^11.7.4",
-    "typescript": "~5.8.0"
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "npm:rolldown-vite@7.2.5"
   },
   "type": "module",
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0",
     "@openzeppelin/contracts-upgradeable": "^5.4.0",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }

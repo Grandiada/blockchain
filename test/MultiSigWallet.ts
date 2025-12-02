@@ -25,7 +25,7 @@ describe("MultiSigWallet", function () {
 
     // Deploy the contract
     const MultiSigWallet = await ethers.getContractFactory("MultiSigWallet");
-    multiSigWallet = await MultiSigWallet.deploy();
+    multiSigWallet = await MultiSigWallet.deploy() as unknown as MultiSigWallet;
     await multiSigWallet.waitForDeployment();
 
     // Get signers for the hardcoded owners
